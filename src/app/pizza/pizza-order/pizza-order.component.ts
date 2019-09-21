@@ -27,8 +27,8 @@ export class PizzaOrderComponent implements OnInit {
     this.store.dispatch(action);
   }
 
-  updatePizza(id: string, size: string):void {
-    const action = new actions.Update(id, { size: size });
+  updatePizza(id: string, size: string): void {
+    const action = new actions.Update(id, { size });
     this.store.dispatch(action);
   }
 
